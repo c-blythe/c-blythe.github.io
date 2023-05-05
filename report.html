@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>.sub-li{margin-left: 20px; list-style-type: circle;}</style>
+    <title>Report</title>
+</head>
+<body>
+    <p>Link: <a href=""></a></p>
+    <p>What the app does:</p>
+    <ul>
+        <li>Trivia</li>
+        <li class="sub-li">The app will randomly generate a question</li>
+        <li class="sub-li">When getting a new question, it can be modified by category and difficulty</li>
+        <li class="sub-li">The user is presented with the answers as buttons</li>
+        <li class="sub-li">When an incorrect button is clicked, the speaking entity will say it is incorrect before resaying the question</li>
+        <li class="sub-li">When the correct button is clicked, the speaking entity will say that, and say a new question</li>
+        <li>Cowsay</li>
+        <li class="sub-li">The trivia text is formatted through the Cowsay API, which makes it look like a cow said it</li>
+        <li class="sub-li">The speaking entity, both the one asking the questions and the one responding</li>
+        <li class="sub-li">This is done through the dropdowns, which both default to 'Cow'</li>
+        <li>Trivia</li>
+        <li class="sub-li">Every trivia question that is given is logged in an array</li>
+        <li class="sub-li">The search bar can be used to search through and filter through the array</li>
+        <li class="sub-li">Any word can be searched, and if the question has it, it will be returned</li>
+        <li class="sub-li">Additionally, keywords, preceded by a '!', can be used as well</li>
+        <li class="sub-li">These keywords provide additional filters to the search</li>
+        <li class="sub-li">For example, the search '!solved' will return every solved question</li>
+    </ul>
+    <br>
+    <span>How the app satisfies requirements:</span>
+    <ul>
+        <li>The app is deployed publicly (as per the link above)</li>
+        <li>The screen width affects the placement of the buttons and selections</li>
+        <li>The OpenTriviaDB API and Cowsay API are used in conjunction with each other</li>
+        <li>A search for past trivia questions is given</li>
+        <li>These search results are displayed below the searchbar</li>
+        <li>Certain keywords (e.g. 'solved') can be used to filter the results</li>
+    </ul>
+</body>
+</html>

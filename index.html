@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Cowsay Trivia</title>
+    <link rel="stylesheet" href="styles/main.css">  
+</head>
+<body>
+    <div class="flex-container">
+        <div>
+            <pre id="question"></pre>
+            <br>
+            <pre id="answer"></pre>
+        </div>
+            
+        <br>
+        <div id="user-div">
+            <button id="button0" value='0' style="visibility: hidden;"></button>
+            <button id="button1" value='1' style="visibility: hidden;"></button>
+            <button id="button2" value='2' style="visibility: hidden;"></button>
+            <button id="button3" value='3' style="visibility: hidden;"></button>
+            <br><br>
+            <div>
+                <button id="newquestion">Skip</button>
+                <select id="category">
+                    <optgroup label="Question Category">
+                        <option value="-1">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals & Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="31">Entertainment: Japanese Anime & Manga</option>
+                        <option value="32">Entertainment: Cartoon & Animations</option>
+                        <option value="17">Science & Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                    </optgroup>
+                </select>
+                <select id="difficulty">
+                    <optgroup label="Question Difficulty">
+                        <option value=''>Any</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <select id="question-speaker">
+                    <optgroup label="Question Speaker">
+                        <option value="default">Cow</option>
+                        <opiton value="duck">Duck</opiton>
+                        <option value="bunny">Bunny</option>
+                        <option value="cock">Chicken</option>
+                        <option value="sheep">Sheep</option>
+                        <option value="koala">Koala</option>
+                        <option value="pony-smaller">Pony</option>
+                        <option value="unipony-smaller">Unicorn</option>
+                        <option value="moose">Moose</option>
+
+                        <option value="turtle">Turtle</option>
+                        <option value="bud-frogs">Frogs</option>
+                        <option value="stegosaurus">Stegosaurus</option>
+
+                        <option value="tux">Tux</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="dragon-and-cow">Dragon and Cow</option>
+                        <option value="milk">Milk?</option>
+                        <option value="cheese">Cheese???</option>
+                        <option value="flaming-sheep">Flaming Sheep</option>
+                        <option value="vader">Cowth Vader</option>
+                        <option value="vader-koala">Darth Vader Koala</option>
+                        <option value="luke-koala">Luke Koala</option>
+                    </optgroup>
+                </select>
+                <select id="answer-speaker">
+                    <optgroup label="Question Speaker">
+                        <option value="default">Cow</option>
+                        <opiton value="duck">Duck</opiton>
+                        <option value="bunny">Bunny</option>
+                        <option value="cock">Chicken</option>
+                        <option value="sheep">Sheep</option>
+                        <option value="koala">Koala</option>
+                        <option value="pony-smaller">Pony</option>
+                        <option value="unipony-smaller">Unicorn</option>
+                        <option value="moose">Moose</option>
+
+                        <option value="turtle">Turtle</option>
+                        <option value="bud-frogs">Frogs</option>
+                        <option value="stegosaurus">Stegosaurus</option>
+
+                        <option value="tux">Tux</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="dragon-and-cow">Dragon and Cow</option>
+                        <option value="milk">Milk?</option>
+                        <option value="cheese">Cheese???</option>
+                        <option value="flaming-sheep">Flaming Sheep</option>
+                        <option value="vader">Cowth Vader</option>
+                        <option value="vader-koala">Darth Vader Koala</option>
+                        <option value="luke-koala">Luke Koala</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input id="searchbar" type="text" placeholder="Search..">
+                <button id="search-help">Search Help</button>
+                <ul id="search-results"></ul>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <br><br>
+    
+
+    <script src="scripts/trivia.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+</html>
