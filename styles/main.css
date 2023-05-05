@@ -1,0 +1,53 @@
+body {
+    background-color: #062244;
+}
+
+pre {
+    display: inline;
+}
+
+p {
+    color: aliceblue;
+}
+
+.question-li {
+    padding-bottom: 20px;
+}
+
+.question-li, .question-li * {
+    color: white;
+}
+
+.sub-li {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+.answer-li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.correct-li {
+    font-weight: bold;
+}
+
+button, select {
+    border-color: white;
+    background-color: white;
+}
+
+pre {
+    color: aliceblue;
+}
+
+
+@media screen and (min-width: 800px) {
+    .flex-container {
+        display: flex;
+    }
+
+    #user-div {
+        margin-left: 40px;
+    }
+}
